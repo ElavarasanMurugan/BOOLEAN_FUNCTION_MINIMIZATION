@@ -17,7 +17,8 @@ Hardware – PCs, Cyclone II , USB flasher
 **Theory**
 
 **Logic Diagram**
-![Experiment 2 logic diagram ](https://github.com/user-attachments/assets/16a827cb-20fe-4d37-b6f9-b636b9ab3f2f)
+![Experiment 2 logic diagram ](https://github.com/user-attachments/assets/5a502f4d-b80c-4b8a-8b15-38726cdd5e92)
+
 
 ![experiment 2 funct 2 logic diagram](https://github.com/user-attachments/assets/1e13a05a-c219-4d3a-8ee8-4df4f27d887d)
 
@@ -46,11 +47,12 @@ output f1;
 assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
 endmodule
 
-module funct1(a,b,c,d,f1);
-input a,b,c,d;
-output f1;
-assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
 endmodule
+
 
 **RTL realization**
 
