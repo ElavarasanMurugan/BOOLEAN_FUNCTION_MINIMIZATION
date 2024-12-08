@@ -17,11 +17,10 @@ Hardware – PCs, Cyclone II , USB flasher
 **Theory**
 
 **Logic Diagram**
-![Experiment 2 logic diagram ](https://github.com/user-attachments/assets/5a502f4d-b80c-4b8a-8b15-38726cdd5e92)
+![logic 1](https://github.com/user-attachments/assets/c3f37211-0042-4b51-970f-183e660460a8)
 
 
-![experiment 2 funct 2 logic diagram](https://github.com/user-attachments/assets/1e13a05a-c219-4d3a-8ee8-4df4f27d887d)
-
+![logic 2](https://github.com/user-attachments/assets/623cce64-3998-41ae-aeb2-459633dc4b23)
 
 **Procedure**
 
@@ -40,16 +39,15 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: RegisterNumber: 24900162*/
 
-
-module funct1(a,,c,d,f1);
+module funct1(a,b,c,d,f1);
 
 input a,b,c,d;
 
 output f1;
 
-assign f1=((~b&!d)|(~a&b&d)|(a&b&~c)):
+assign f1=((~b&~c)|(~a&b&d)|(a&b&~c));
 
 endmodule
 
@@ -60,20 +58,22 @@ input w,x,y,z;
 
 output f2;
 
-assign f2=((~y&z)|(w&y)|(x&y));
+assign f2=((~y & z)|( w & y )|(x & y));
 
 endmodule
+
 
 **RTL realization**
 
 **Output:**
 
 **RTL**
-![Experiment 2 waveform](https://github.com/user-attachments/assets/df865574-b292-4fd3-ac9a-30b8033d77bb)
 
-![experiment 2 funct 2 waveform ](https://github.com/user-attachments/assets/aeb86e93-2741-4ab8-9b36-be8bd183f38c)
 
 **Timing Diagram**
+![wavefoem 1](https://github.com/user-attachments/assets/acc21965-d195-4f2d-a540-0f675ecd6d48)
+
+![waveform 2](https://github.com/user-attachments/assets/2f3bc9d2-b31d-4595-8545-46ae6162f38f)
 
 **Result:**
 
